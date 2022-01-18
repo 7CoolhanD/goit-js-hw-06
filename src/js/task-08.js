@@ -9,6 +9,7 @@ function onFormSubmit(event) {
 
   if (!email || !password) {
     alert("enter all types");
+    return;
   }
   const formData = {
     email,
