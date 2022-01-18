@@ -5,10 +5,11 @@ const refs = {
 };
 
 refs.changeColorBtn.addEventListener("click", changeBodyColor);
+const randomHexColor = getRandomHexColor();
 
 function changeBodyColor() {
-  refs.body.style.backgroundColor = getRandomHexColor();
-  refs.colorValue.textContent = getRandomHexColor();
+  refs.body.style.backgroundColor = randomHexColor;
+  refs.colorValue.textContent = randomHexColor;
 }
 
 function getRandomHexColor() {
